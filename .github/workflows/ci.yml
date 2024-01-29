@@ -4,8 +4,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: abdolkarimhashemi/stm32gcc:latest
-      steps:
-        - name: Checkout the repository
-          uses: actions/checkout@v3
-        - run: make
-        - run: make cppcheck
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      - run: make
+      - run: make cppcheck
