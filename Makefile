@@ -1,3 +1,22 @@
+
+#Directories
+TOOLS_DIR=${TOOLS_PATH}
+STM32GCC_ROOT_DIR=$(TOOLS_DIR)/stm32-gcc
+STM32GCC_BIN_DIR=$(STM32GCC_ROOT_DIR)/bin
+STM32GCC_INCLUDE_DIR=$(STM32GCC_ROOT_DIR)/include
+BUILD_DIR=build
+OBJ_DIR=$(BUILD_DIR)/obj
+BIN_DIR=$(BUILD_DIR)/bin
+TI_CCS_DIR=$(TOOLS_DIR)/ccs1110/ccs
+DEBUG_BIN_DIR=$(TI_CCS_DIR)/ccs_base/DebugServer/bin
+DEBUG_DRIVERS_DIR=$(TOOLS_DIR)/ccs_base/DebugServer/drivers
+
+LIB_DIRS=$(STM32GCC_INCLUDE_DIR)
+INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)\
+	     ./src \
+	     ./external/ \
+	     ./external/printf
+
 #Toolchain
 CC = arm-none-eabi-gcc
 AS = arm-none-eabi-as
