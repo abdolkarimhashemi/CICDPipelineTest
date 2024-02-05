@@ -19,7 +19,7 @@ INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)\
 
 #Toolchain
 CC = arm-none-eabi-gcc
-AS = arm-none-eabi-as
+AS = $(STM32GCC_ROOT_DIR)/arm-none-eabi-as
 LD = arm-none-eabi-ld
 BIN = arm-none-eabi-objcopy
 STL = st-flash
