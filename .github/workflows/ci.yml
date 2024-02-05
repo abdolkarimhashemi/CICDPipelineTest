@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   build_and_static_analysis:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04.3 LTS
     container:
       image: abdolkarimhashemi/arm-gnu-toolchain-13.2rel1:latest
     steps:
