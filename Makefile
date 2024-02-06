@@ -1,6 +1,6 @@
 
 #Directoriess
-TOOLS_PATH=~/dev/tools
+#TOOLS_PATH=~/dev/tools
 TOOLS_DIR=${TOOLS_PATH}
 STM32GCC_ROOT_DIR=$(TOOLS_DIR)/stm32-gcc
 STM32GCC_BIN_DIR=$(STM32GCC_ROOT_DIR)/bin
