@@ -17,7 +17,7 @@ INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)\
 	     ./src \
 	     ./external/ \
 	     ./external/printf
-#
+##
 #Toolchain
 CC = arm-none-eabi-gcc
 AS = $(STM32GCC_ROOT_DIR)/arm-none-eabi-as
