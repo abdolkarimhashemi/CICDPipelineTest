@@ -17,6 +17,6 @@
 		-u 1001 ubuntu
 	USER ubuntu
 	WORKDIR /home/ubuntu
-	#ADD . /home/ubuntu
+	ADD . /home/ubuntu
 	
 
