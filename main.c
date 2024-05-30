@@ -32,8 +32,7 @@ void Delay10us(int32 num )
 int main()
 {
 	  
-int test=80;
-	  RCC->AHBENR  |= (1<< 1);
+int test=855555 RCC->AHBENR  |= (1<< 1);
 	    GPIOB ->MODER |= (1<<4);
 	      GPIOB->OTYPER &= ~(1<<2);
 	        GPIOB->OSPEEDR |= (1<<5);
