@@ -3,7 +3,7 @@ jobs:
   build_and_static_analysis:
     runs-on: ubuntu-latest
     container:
-      image: abdolkarimhashemi/stm32gcc:latest
+      image: abdolkarimhashemi/arm-gnu-toolchain-13.2rel1:latest
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
