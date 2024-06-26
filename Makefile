@@ -1,7 +1,7 @@
 #test
 #Directoriess
-#TOOLS_PATH=/home/ubuntu/dev/tools
-TOOLS_PATH=/dev/tools
+TOOLS_PATH=/home/ubuntu/dev/tools
+#TOOLS_PATH=/dev/tools
 TOOLS_DIR=${TOOLS_PATH}
 STM32GCC_ROOT_DIR=$(TOOLS_DIR)/stm32gcc/bin#arm-none-eabi#arm-gnu-toolchain-13.2rel1
 STM32GCC_BIN_DIR=$(STM32GCC_ROOT_DIR)/bin
