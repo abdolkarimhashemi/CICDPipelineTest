@@ -14,10 +14,10 @@ DEBUG_BIN_DIR=$(TI_CCS_DIR)/ccs_base/DebugServer/bin
 DEBUG_DRIVERS_DIR=$(TOOLS_DIR)/ccs_base/DebugServer/drivers
 
 LIB_DIRS=$(STM32GCC_INCLUDE_DIR)
-INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)\
-	     ./src \
-	     ./external/ \
-	     ./external/printf
+INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)#\
+#	     ./src \
+#	     ./external/ \
+#	     ./external/printf
 ##
 #Toolchain
 CC = $(STM32GCC_ROOT_DIR)/arm-none-eabi-gcc
