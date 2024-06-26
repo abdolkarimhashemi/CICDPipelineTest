@@ -3,7 +3,7 @@
 #TOOLS_PATH=/home/ubuntu/dev/tools
 TOOLS_PATH=/dev/tools
 TOOLS_DIR=${TOOLS_PATH}
-STM32GCC_ROOT_DIR=$(TOOLS_DIR)/stm32gcc/arm-none-eabi#arm-gnu-toolchain-13.2rel1
+STM32GCC_ROOT_DIR=$(TOOLS_DIR)/stm32gcc/bin#arm-none-eabi#arm-gnu-toolchain-13.2rel1
 STM32GCC_BIN_DIR=$(STM32GCC_ROOT_DIR)/bin
 STM32GCC_INCLUDE_DIR=$(STM32GCC_ROOT_DIR)/include
 BUILD_DIR=build
@@ -20,10 +20,10 @@ INCLUDE_DIRS=$(STM32GCC_INCLUDE_DIR)\
 	     ./external/printf
 ##
 #Toolchain
-CC = arm-none-eabi-gcc
+CC = $(STM32GCC_ROOT_DIR)/arm-none-eabi-gcc
 AS = $(STM32GCC_ROOT_DIR)/arm-none-eabi-as
-LD = arm-none-eabi-ld
-BIN = arm-none-eabi-objcopy
+LD = $(STM32GCC_ROOT_DIR)/arm-none-eabi-ld
+BIN = $(STM32GCC_ROOT_DIR)/arm-none-eabi-objcopy
 STL = st-flash
 CPPCHECK=cppcheck
 
