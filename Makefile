@@ -36,7 +36,7 @@ CFLAGS = -mthumb -mcpu=cortex-m3
 WFLAGS=-Wall -Wextra -Werror -Wshadow
 
 #Directories
-INCLUDE_DIRS=/projecttest/CICDPipeline/Capnography
+#INCLUDE_DIRS=/projecttest/CICDPipeline/Capnography
 
 
 #Phonies
